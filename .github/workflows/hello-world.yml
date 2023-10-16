@@ -1,0 +1,13 @@
+name: Hello World Actions
+run-name: ${{ github.actor }}
+on: [push]
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello World"
+          echo "I'm a Github Action"
+      - run: |
+          echo "Goodbye"
+
